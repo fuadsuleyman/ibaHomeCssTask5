@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../img/table-backg.png");
+    background-size: cover;
+}
+
+@font-face {
+    font-family: Arimo;
+    src: url("../fonts/Arimo-Regular.ttf");
+}
+
+@font-face {
+    font-family: Arimo-bold;
+    src: url("../fonts/Arimo-Bold.ttf");
+}
+
+/*border for rows and coloumns*/
+.items {
+    color: black;
+    border: rgba(0, 0, 0 , 0.1) solid 1px;
+}
+
+/*nested grid for cell where prices ($17.99-37.99-97.99) writen*/
+.item5-6-7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/*rules where writen prices*/
+.price-span {
+    grid-row: 1 / span 2;
+}
+.price {
+    font-family: Arimo-bold;
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: right;
+    margin-top: 2px;
+}
+.price99 {
+    font-family: Arimo-bold;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    margin-top: 11px;
+}
+.per-month {
+    font-family: Arimo;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    margin-top: 2px;
+}
+
+/*rules for cells where icons*/
+.withIcon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*rupes for storage bandwith email support products users */
+.sup-users-col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.icon-texts {
+    font-family: Arimo;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/*this rules for other simple cells in center of table*/
+.other-cells {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.other-text {
+    font-family: Arimo;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/*this rules for buttons below*/
+.btn {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.con-us-btn {
+    font-family: Arimo-bold;
+    font-size: 16px;
+    color: white;
+    padding: 15px 40px 15px 41px;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.green-buynow-btn {
+    font-family: Arimo-bold;
+    font-size: 16px;
+    color: white;
+    padding: 15px 40px 15px 41px;
+    border-radius: 7px;
+    background: #89c331;
+}
+.red-buynow-btn {
+    font-family: Arimo-bold;
+    font-size: 16px;
+    color: white;
+    padding: 15px 40px 15px 41px;
+    border-radius: 7px;
+    background: #f04a56;
+}
+.blue-buynow-btn {
+    font-family: Arimo-bold;
+    font-size: 16px;
+    color: white;
+    padding: 15px 40px 15px 41px;
+    border-radius: 7px;
+    background: #20807c;
+}
+
+/*this is hover effects for buttons below*/
+.con-us-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+.green-buynow-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+.red-buynow-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+.blue-buynow-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+
+.container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 72px 80px 72px 72px 72px 72px 72px 72px 110px;
+}
+
+.item1 {
+    grid-row: 1 / 3;
+}
+.item13 {
+    grid-column: 2 / 4;
+}
+
+.item20 {
+    grid-column: 2 / span 3;
+}
+
+/*color of head row*/
+.p-head {
+    color: white;
+}
+
+.pricing-plan {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    font-family: Arimo-bold;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    text-align: center;
+}
+/*this p2 is belong to pricing plan*/
+.p2 {
+    font-size: 30px;
+}
+
+.standard {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Arimo-bold;
+    background: #89c331;
+}
+.ultimate {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Arimo-bold;
+    background: #f04a56;
+}
+.premium{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Arimo-bold;
+    background: #20807c;
+}
+
+/*this is below other pows bacrground color*/
+.secend-row {
+    background: #f2f2f2;
+}
+.third-row {
+    background: #e3e3e3;
+}
+.zero-row {
+    background: white;
+}
